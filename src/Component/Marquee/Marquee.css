@@ -1,0 +1,23 @@
+.marquee-container {
+    position: relative;
+}
+
+.marquee-inner-container1 {
+    width: 99vw;
+    height: 50vh;
+    background-color: black;
+    color: white;
+    /* position: absolute;
+    top: 0;
+    z-index: 2; */
+}
+
+.marquee-inner-container2 {
+    width: 99vw;
+    height: 50vh;
+    background-color: rgb(41, 30, 199);
+    /* position: absolute;
+   bottom:-20vw;
+    z-index: 1; */
+    /* color: white; */
+}
