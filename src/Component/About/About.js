@@ -4,6 +4,7 @@ import { gsap, TweenMax, Power3 } from 'gsap';
 import SplitText from '../../Hook/SplitText';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import ProxyHook from '../../Hook/ProxyHook';
+import LocamotiveScrollHook from '../../Hook/LocamotiveScrollHook';
 const About = () => {
   const aboutref = useRef(null);
   const aboutContainer = useRef(null);
@@ -32,37 +33,67 @@ const About = () => {
 
 
 
-    // const ctr = gsap.context(() => {
+    const ctr = gsap.context(() => {
 
-    //   gsap.from([...aboutref.current.children], 1, { opacity: 0, y: 100 }, 0.04)
-    //   gsap.to([...aboutref.current.children], 1, {
-    //     opacity: 0, y: 0,
-    //     fontWeight: 'bold',
-    //     scrollTrigger: {
-    //       trigger: aboutref.current,
-    //       markers: true,
-    //       start: 'top 75%',
-    //       end: 'bottom 45%',
-    //       scrub: true,
-    //       onUpdate() {
-    //         console.log("Update")
-    //       }
-    //     }
-    //   }, 0.02)
 
-    // }, aboutContainer);
-    // return () => ctr.revert();
-    ProxyHook(cls1);
-    gsap.to(cls1, 1, {
-      backgroundColor: '#CF4DCE'
-      , scrollTrigger: {
-        trigger: cls1,
-        markers: true,
-        start: 'top 80%',
-        end: 'bottom 40%',
-        scrub: true
-      }
-    })
+
+      const scroll = LocamotiveScrollHook();
+
+      scroll.on("scroll", ScrollTrigger.update);
+
+      ScrollTrigger.scrollerProxy(cls1, {
+        scrollTop(value) {
+          return arguments.length ? scroll.scrollTo(value, { duration: 0, disableLerp: true }) : scroll.scroll.instance.scroll.y;
+        },
+        getBoundingClientRect() {
+          return { top: 0, left: 0, width: window.innerWidth, height: window.innerHeight };
+        },
+        pinType: document.querySelector(cls1).style.transform ? "transform" : "fixed"
+      });
+      ScrollTrigger.addEventListener("refresh", () => scroll.update());
+      ScrollTrigger.defaults({ scroller: cls1 });
+
+
+      gsap.to(cls1, 1, {
+        backgroundColor: '#CF4DCE'
+        , scrollTrigger: {
+          trigger: cls1,
+          markers: true,
+          start: 'top 80%',
+          end: 'bottom 40%',
+          scrub: true
+        }
+      })
+
+      // gsap.from(cls1, 1, { opacity: 0, y: 100 }, 0.04)
+      // gsap.to(cls1, 1, {
+      //   opacity: 0, y: 0,
+      //   fontWeight: 'bold',
+      //   scrollTrigger: {
+      //     trigger: aboutref.current,
+      //     markers: true,
+      //     start: 'top 75%',
+      //     end: 'bottom 45%',
+      //     scrub: true,
+      //     onUpdate() {
+      //       console.log("Update")
+      //     }
+      //   }
+      // }, 0.02)
+
+    }, aboutContainer);
+    return () => ctr.revert();
+
+    // gsap.to(cls1, 1, {
+    //   backgroundColor: '#CF4DCE'
+    //   , scrollTrigger: {
+    //     trigger: cls1,
+    //     markers: true,
+    //     start: 'top 80%',
+    //     end: 'bottom 40%',
+    //     scrub: true
+    //   }
+    // })
   })
   return (
 

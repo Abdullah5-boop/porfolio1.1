@@ -30,39 +30,37 @@ function App() {
 
     // ------proxy----------------
 
-    // console.log(scroll)
-    // ProxyHook({ cls1, scroll })
 
 
-    scroll.on("scroll", ScrollTrigger.update);
-    ScrollTrigger.scrollerProxy(cls1, {
-      scrollTop(value) {
-        return arguments.length ? scroll.scrollTo(value, { duration: 0, disableLerp: true }) : scroll.scroll.instance.scroll.y;
-      },
-      getBoundingClientRect() {
-        return { top: 0, left: 0, width: window.innerWidth, height: window.innerHeight };
-      },
-      pinType: document.querySelector(cls1).style.transform ? "transform" : "fixed"
-    });
+    // scroll.on("scroll", ScrollTrigger.update);
+    // ScrollTrigger.scrollerProxy(cls1, {
+    //   scrollTop(value) {
+    //     return arguments.length ? scroll.scrollTo(value, { duration: 0, disableLerp: true }) : scroll.scroll.instance.scroll.y;
+    //   },
+    //   getBoundingClientRect() {
+    //     return { top: 0, left: 0, width: window.innerWidth, height: window.innerHeight };
+    //   },
+    //   pinType: document.querySelector(cls1).style.transform ? "transform" : "fixed"
+    // });
 
 
-    ScrollTrigger.addEventListener("refresh", () => scroll.update());
-    ScrollTrigger.defaults({ scroller: cls1 });
+    // ScrollTrigger.addEventListener("refresh", () => scroll.update());
+    // ScrollTrigger.defaults({ scroller: cls1 });
 
     // -----------------------gsap-------------------------------
 
     //  const value= ProxyHook({cls1})
     //  console.log(value)
-    gsap.to(cls1, 1, {
-      backgroundColor: '#CF4DCE'
-      , scrollTrigger: {
-        trigger: cls1,
-        markers: true,
-        start: 'top 80%',
-        end: 'bottom 40%',
-        scrub: true
-      }
-    })
+    // gsap.to(cls1, 1, {
+    //   backgroundColor: '#CF4DCE'
+    //   , scrollTrigger: {
+    //     trigger: cls1,
+    //     markers: true,
+    //     start: 'top 80%',
+    //     end: 'bottom 40%',
+    //     scrub: true
+    //   }
+    // })
 
   }, [])
 
@@ -72,19 +70,20 @@ function App() {
 
     >
       <div data-scroll-container>
-        {/* <Nav1></Nav1> */}
-        {/* <Banner1></Banner1> */}
-        {/* <About></About> */}
+        <Nav1></Nav1>
+        <Banner1></Banner1>
+        <About></About>
         {/* <Marquee></Marquee> */}
 
 
-        <div className="text-center text-6xl w-screen h-screen flex justify-center items-end">
+        {/* <div className="text-center text-6xl w-screen h-screen flex justify-center items-end">
           <div className="line1">
             <h1>Lorem ipsum dolor sit amet.</h1>
           </div>
 
         </div>
-        <div className="div h-screen bg-red-500"></div>
+        <div className="div h-screen bg-red-500"></div> */}
+
       </div>
 
 
