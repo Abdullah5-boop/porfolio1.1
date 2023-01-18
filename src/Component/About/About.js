@@ -52,48 +52,20 @@ const About = () => {
       });
       ScrollTrigger.addEventListener("refresh", () => scroll.update());
       ScrollTrigger.defaults({ scroller: cls1 });
-
-
+      gsap.from(cls1, 1, { opacity: 0, y: 100 }, 0.04)
       gsap.to(cls1, 1, {
-        backgroundColor: '#CF4DCE'
-        , scrollTrigger: {
+        opacity: 1, y: 0,
+        fontWeight: 'bold',
+        scrollTrigger: {
           trigger: cls1,
           markers: true,
-          start: 'top 80%',
-          end: 'bottom 40%',
+          start: 'top 90%',
+          end: 'bottom 50%',
           scrub: true
         }
-      })
-
-      // gsap.from(cls1, 1, { opacity: 0, y: 100 }, 0.04)
-      // gsap.to(cls1, 1, {
-      //   opacity: 0, y: 0,
-      //   fontWeight: 'bold',
-      //   scrollTrigger: {
-      //     trigger: aboutref.current,
-      //     markers: true,
-      //     start: 'top 75%',
-      //     end: 'bottom 45%',
-      //     scrub: true,
-      //     onUpdate() {
-      //       console.log("Update")
-      //     }
-      //   }
-      // }, 0.02)
-
+      }, 0.02)
     }, aboutContainer);
     return () => ctr.revert();
-
-    // gsap.to(cls1, 1, {
-    //   backgroundColor: '#CF4DCE'
-    //   , scrollTrigger: {
-    //     trigger: cls1,
-    //     markers: true,
-    //     start: 'top 80%',
-    //     end: 'bottom 40%',
-    //     scrub: true
-    //   }
-    // })
   })
   return (
 
@@ -108,8 +80,6 @@ const About = () => {
         <h1
           id='maincontainer'
           ref={aboutref}>
-
-
           <div className='lg:ml-52 inline-block'>
             sdfsdf
           </div>
