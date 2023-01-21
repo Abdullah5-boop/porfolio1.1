@@ -5,16 +5,23 @@ font-family: 'Syncopate', sans-serif; */
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100&family=Syncopate&display=swap');
 /* font-family: 'Libre Franklin', sans-serif;
 font-family: 'Syncopate', sans-serif; */
+*{
+    /* outline: 1px solid red; */
+}
 .about-container{
     width: 95vw;
     height: 100vh;
+    /* min-height: ; */
     background-color:'red' ;
     text-transform: uppercase;
     margin: auto;
+    position: relative;
+    /* overflow: hidden; */
 }
 .about-content{
     margin-top: 50px;
-    font-size: clamp(1rem,10vh,3rem);
+    /* font-size: clamp(0.5rem,10vh,3rem); */
+    /* font-size: 10px; */
     /* font-weight: bold; */
     font-family: 'Libre Franklin', sans-serif;
     box-sizing: border-box;
@@ -39,4 +46,18 @@ font-family: 'Syncopate', sans-serif; */
     height: 8px;
     top:50%;
     background-color: #FF0032;
+}
+.about-imgholder{
+    width:90vw;
+    height: 50vh;
+    
+
+}
+.about-imgholder img{
+    /* width: 40vw;
+    height: 50vh;
+
+     */
+     /* margin: auto; */
+
 }

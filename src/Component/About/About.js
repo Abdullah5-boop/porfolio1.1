@@ -11,36 +11,9 @@ const About = () => {
   gsap.registerPlugin(ScrollTrigger);
   const cls1 = ".about-content"
   useEffect(() => {
-    //   var splt = new SplitText("#maincontainer", {
-    //     type: 'lines',
-    //     linesClass: 'lineChildren'
-    // });
-
-    // -------------copycode-----------
-    // TweenMax.staggerFrom([...aboutref.current.children], 1, { opacity: 0, y: 44, ease: Power3.easeInOut}, 0.2)
-    // TweenMax.staggerTo([...aboutref.current.children], 1, { opacity: 1, y: 0, ease: Power3.easeInOut,scrollTrigger:{
-    //   trigger:aboutref,
-    //   markers:true,
-
-    // } }, 0.2)
-    // -----------------owncode------------
-
-    // console.log(aboutref.current.children)
-
-
-
-
-
-
-
     const ctr = gsap.context(() => {
-
-
-
       const scroll = LocamotiveScrollHook();
-
       scroll.on("scroll", ScrollTrigger.update);
-
       ScrollTrigger.scrollerProxy(cls1, {
         scrollTop(value) {
           return arguments.length ? scroll.scrollTo(value, { duration: 0, disableLerp: true }) : scroll.scroll.instance.scroll.y;
@@ -58,9 +31,9 @@ const About = () => {
         fontWeight: 'bold',
         scrollTrigger: {
           trigger: cls1,
-          markers: true,
-          start: 'top 90%',
-          end: 'bottom 50%',
+          // markers: true,
+          start: 'top 100%',
+          end: 'bottom 40%',
           scrub: true
         }
       }, 0.02)
@@ -72,7 +45,7 @@ const About = () => {
     <div
       data-scroll-section
       ref={aboutContainer}
-      className="about-container italic">
+      className="about-container italic mb-80  text-xl lg:text-6xl ">
       <div className="about-title">
         <h3 className='text-3xl '>About Us</h3>
       </div>
@@ -86,7 +59,19 @@ const About = () => {
           ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos esse atque nisi fuga enim temporibus, autem minima odio impedit. Fugiat nemo minima culpa , praesentium quos perspiciatis. Inventore, quidem eveniet. Lorem, ipsum dolor  <div className='inline-block  underlines'>sdfsdf
           </div> sit amet consectetur adipisicing elit. Sed, praesentium ipsum! sp Laborum dolori
         </h1>
+        <div
+        className='flex justify-end about-imgholder '>
+        <img
+          width='50vw'
+          height='400px'
+          data-scroll
+          data-scroll-speed="8"
+          // className='pr-0 lg:pr-64'
+          className='mr-0 lg:mr-64 w-5/6 lg:w-2/5 h-4/6 lg:h-full'
+          src="https://source.unsplash.com/zmiMJS7jVGA" alt="" />
       </div>
+      </div>
+     
     </div>
 
   );
