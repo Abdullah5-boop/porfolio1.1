@@ -35,21 +35,21 @@ function App() {
 
     >
       <div data-scroll-container>
-        <Nav1></Nav1>
-        <Banner1></Banner1>
-       
-        <Temp1></Temp1>
-        <Marquee></Marquee>
-        <Temp1></Temp1>
+        {/* <Nav1></Nav1> */}
+        {/* <Banner1></Banner1> */}
+
+        {/* <Temp1></Temp1> */}
+        {/* <Marquee></Marquee> */}
+        {/* <Temp1></Temp1> */}
         {/* <Temp1></Temp1> */}
         <Temp1></Temp1>
         <Banner2></Banner2>
-       
+
         <Temp1></Temp1>
-        <About></About>
-        <Temp1></Temp1>
-         <Gallery1></Gallery1>
-    
+        {/* <About></About> */}
+        {/* <Temp1></Temp1> */}
+        {/* <Gallery1></Gallery1> */}
+
 
 
 

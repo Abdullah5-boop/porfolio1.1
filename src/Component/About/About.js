@@ -56,11 +56,11 @@ const About = () => {
         <h3 className='text-3xl '>
           <div className='flex'>
 
-            <div data-scroll data-scroll-speed="2">A</div>
+            <div data-scroll data-scroll-speed="1.2">A</div>
             <div data-scroll data-scroll-speed="1">b</div>
-            <div data-scroll data-scroll-speed="2">o</div>
+            <div data-scroll data-scroll-speed="1.4">o</div>
             <div data-scroll data-scroll-speed="1">u</div>
-            <div data-scroll data-scroll-speed="2">t</div>
+            <div data-scroll data-scroll-speed="1.5">t</div>
           </div>
 
         </h3>
