@@ -4,13 +4,13 @@ import LocamotiveScrollHook from '../../Hook/LocamotiveScrollHook';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import './Marquee.css';
 import { TimelineMax, Power3 } from 'gsap/all';
+import StategyMain from '../Strategy/StategyMain';
 const Marquee = () => {
     const marqueeRef = useRef(null);
     const tranferRef = useRef(null);
     const tranferRef1 = useRef(null);
     const tl = gsap.timeline({ repeat: -1 })
     // let cls1 = 
-
     //------------ precode---
     // ------------------end-----precode ---
 
@@ -36,19 +36,18 @@ const Marquee = () => {
                 {
 
                     ease: Power3.easeInOut,
-                 
+
                     scrollTrigger: {
                         trigger: tranferRef1.current,
-                        markers: true,
                         start: 'top 60%',
-                        end: 'bottom 120%',
+                        end: 'bottom 142%',
                         scrub: true,
                         pin: true
 
                     }
 
                 })
-               tl.to('.marquee-page2-h1',20,{x:'-520vw'})
+            tl.to('.marquee-page2-h1', 20, { x: '-520vw' })
         }, marqueeRef)
         return () => ctx.revert();
     }, [])
@@ -57,10 +56,13 @@ const Marquee = () => {
         <>
             <div className=' marque-container relative' data-scroll-section ref={marqueeRef}>
                 <h1 className='text-3xl text-white'>This is backgroundColor</h1>
-                <div className="marquee-page1 " ref={tranferRef1}></div>
+                <div className="marquee-page1 " ref={tranferRef1}>
+                    <StategyMain></StategyMain>
+                </div>
+
+
                 <div className="marquee-page2" ref={tranferRef}>
                     <h1 className='marquee-page2-h1 border'> My Name is Abdullah. I am a Web developer. </h1>
-              
                 </div>
 
             </div>

@@ -12,6 +12,7 @@ const About = () => {
   const cls1 = ".about-content"
   useEffect(() => {
     const ctr = gsap.context(() => {
+
       const scroll = LocamotiveScrollHook();
       scroll.on("scroll", ScrollTrigger.update);
       ScrollTrigger.scrollerProxy(cls1, {
@@ -25,6 +26,11 @@ const About = () => {
       });
       ScrollTrigger.addEventListener("refresh", () => scroll.update());
       ScrollTrigger.defaults({ scroller: cls1 });
+
+
+
+
+
       gsap.from(cls1, 1, { opacity: 0, y: 100 }, 0.04)
       gsap.to(cls1, 1, {
         opacity: 1, y: 0,
@@ -47,7 +53,17 @@ const About = () => {
       ref={aboutContainer}
       className="about-container italic mb-80  text-xl lg:text-6xl ">
       <div className="about-title">
-        <h3 className='text-3xl '>About Us</h3>
+        <h3 className='text-3xl '>
+          <div className='flex'>
+
+            <div data-scroll data-scroll-speed="2">A</div>
+            <div data-scroll data-scroll-speed="1">b</div>
+            <div data-scroll data-scroll-speed="2">o</div>
+            <div data-scroll data-scroll-speed="1">u</div>
+            <div data-scroll data-scroll-speed="2">t</div>
+          </div>
+
+        </h3>
       </div>
       <div className="about-content ">
         <h1
@@ -60,18 +76,18 @@ const About = () => {
           </div> sit amet consectetur adipisicing elit. Sed, praesentium ipsum! sp Laborum dolori
         </h1>
         <div
-        className='flex justify-end about-imgholder '>
-        <img
-          width='50vw'
-          height='400px'
-          data-scroll
-          data-scroll-speed="8"
-          // className='pr-0 lg:pr-64'
-          className='mr-0 lg:mr-64 w-5/6 lg:w-2/5 h-4/6 lg:h-full'
-          src="https://source.unsplash.com/zmiMJS7jVGA" alt="" />
+          className='flex justify-end about-imgholder '>
+          <img
+            width='50vw'
+            height='400px'
+            data-scroll
+            data-scroll-speed="8"
+            // className='pr-0 lg:pr-64'
+            className='mr-0 lg:mr-64 w-5/6 lg:w-2/5 h-4/6 lg:h-full'
+            src="https://source.unsplash.com/zmiMJS7jVGA" alt="" />
+        </div>
       </div>
-      </div>
-     
+
     </div>
 
   );
