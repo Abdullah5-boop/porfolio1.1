@@ -75,7 +75,7 @@ const About = () => {
           ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos esse atque nisi fuga enim temporibus, autem minima odio impedit. Fugiat nemo minima culpa , praesentium quos perspiciatis. Inventore, quidem eveniet. Lorem, ipsum dolor  <div className='inline-block  underlines'>sdfsdf
           </div> sit amet consectetur adipisicing elit. Sed, praesentium ipsum! sp Laborum dolori
         </h1>
-        <div
+        {/* <div
           className='flex justify-end about-imgholder '>
           <img
             width='50vw'
@@ -85,7 +85,7 @@ const About = () => {
             // className='pr-0 lg:pr-64'
             className='mr-0 lg:mr-64 w-5/6 lg:w-2/5 h-4/6 lg:h-full'
             src="https://source.unsplash.com/zmiMJS7jVGA" alt="" />
-        </div>
+        </div> */}
       </div>
 
     </div>

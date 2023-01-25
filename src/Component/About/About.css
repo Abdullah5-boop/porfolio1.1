@@ -7,6 +7,8 @@ font-family: 'Syncopate', sans-serif; */
 font-family: 'Syncopate', sans-serif; */
 *{
     /* outline: 1px solid red; */
+    margin: 0;
+    padding: 0;
 }
 .about-container{
     width: 95vw;
@@ -17,13 +19,16 @@ font-family: 'Syncopate', sans-serif; */
     margin: auto;
     position: relative;
     /* overflow: hidden; */
+    /* background-color: #1c1c1c;
+    color: aliceblue; */
 }
 .about-content{
     margin-top: 50px;
     /* font-size: clamp(0.5rem,10vh,3rem); */
     /* font-size: 10px; */
     /* font-weight: bold; */
-    font-family: 'Libre Franklin', sans-serif;
+    /* font-family: 'Libre Franklin', sans-serif; */
+    font-family: nuefont2;
     box-sizing: border-box;
 }
 .lineChildren1{

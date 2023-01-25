@@ -6,7 +6,7 @@ const GarlleryPage1 = () => {
         <>
             <div className='GarlleryPage1-container'
                 data-scroll-section>
-                <div className=' flex justify-center'>
+                <div className=' flex flex-col items-start'>
                     <div className="gallary-photo-container1  ">
                       
                             <img
@@ -15,6 +15,7 @@ const GarlleryPage1 = () => {
                                 src="https://source.unsplash.com/BxQeZ9UQQhA" alt="" />
                         
                  
+                    <h1 className='bg-fuchsia-400'>Hello world</h1>
                     </div>
                 </div>
                 <div className=''>

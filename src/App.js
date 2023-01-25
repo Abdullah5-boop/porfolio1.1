@@ -17,6 +17,7 @@ import Join1 from './Others/Join1';
 import Gallery1 from './Component/Gallery1/Gallery1';
 import GarlleryPage1 from './Component/Gallery1/GarlleryPage1';
 import Banner2 from './Component/Banner2/Banner2';
+import VarticalScroll from './Component/Vartical/VarticalScroll';
 
 function App() {
   gsap.registerPlugin(ScrollTrigger);
@@ -35,14 +36,19 @@ function App() {
 
     >
       <div data-scroll-container>
-        {/* <Nav1></Nav1> */}
-        {/* <Banner1></Banner1> */}
+        <Nav1></Nav1>
+        <Banner1></Banner1>
 
-        {/* <Temp1></Temp1> */}
-        {/* <Marquee></Marquee> */}
-        {/* <Temp1></Temp1> */}
-        {/* <Temp1></Temp1> */}
         <Temp1></Temp1>
+        <Marquee></Marquee>
+        <Temp1></Temp1>
+        <Temp1></Temp1>
+ 
+
+
+
+
+        {/* <VarticalScroll></VarticalScroll> */}
         <Banner2></Banner2>
 
         <Temp1></Temp1>

@@ -4,14 +4,12 @@
 }
 
 :root {
-    --banner2-h1font:clamp( 20px,5vw,4.5rem);
-    --banner-word-spacing: clamp( 5px,5vw,25px);
-    --banner-line-height:clamp( 20px,5vw,65px);
+    --banner2-h1font: clamp(20px, 5vw, 4.5rem);
+    --banner-word-spacing: clamp(5px, 5vw, 25px);
+    --banner-line-height: clamp(20px, 5vw, 65px);
 }
 
 .box-cover {
-    /* width: 100vw;
-    height: 90vh; */
     border-top: 1px solid rgb(0, 0, 0);
     border-bottom: 1px solid rgb(0, 0, 0);
 }
@@ -23,14 +21,21 @@
 
 .box div {
     width: 100%;
-    /* height: 23%; */
     margin: 2px;
 
+}
+.box1-img-container{
+    box-sizing: border-box;
+    width:  100px;
+    height: 98ch;
+    /* background-color: rgb(99, 14, 165); */
 }
 
 .box1-img-container img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
+   /* padding-top: 5px; */
 }
 
 .box2 {
@@ -61,5 +66,30 @@
     word-spacing: 5px;
     font-size: 19px;
     text-transform: uppercase;
+
+
+}
+
+.box1 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-origin: top;
+
+    transition: all 1s linear;
+}
+
+.img-cover {
+    width: 100%;
+    height: 96%;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    transform-origin: top;
+
+    transition: all 1s linear;
 
 }
