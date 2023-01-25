@@ -30,7 +30,7 @@ const Banner1 = () => {
         <div
             data-scroll-section
             ref={bannerRef}
-            className='banner1-container'>
+            className='banner1-container '>
             <div className='banner1-inner-container flex justify-center items-center '>
                 <div>
                     <div className='temp'>
@@ -93,11 +93,11 @@ const Banner1 = () => {
                 </div>
             </div>
             <div className="hr"></div>
-            <div className='flex justify-around font-serif'>
+            {/* <div className='flex justify-around font-serif'>
                 <p>About</p>
                 <p>About</p>
                 <p>About</p>
-            </div>
+            </div> */}
         </div>
 
 
