@@ -12,6 +12,15 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { gsap, TweenMax, Power3 } from 'gsap';
 import LocamotiveScrollHook from './Hook/LocamotiveScrollHook';
 import ProxyHook from './Hook/ProxyHook';
+import Temp1 from './Component/Temp1/Temp1';
+import Join1 from './Others/Join1';
+import Gallery1 from './Component/Gallery1/Gallery1';
+import GarlleryPage1 from './Component/Gallery1/GarlleryPage1';
+import Banner2 from './Component/Banner2/Banner2';
+import VarticalScroll from './Component/Vartical/VarticalScroll';
+import About2 from './Component/About/About2';
+import Gallery2 from './Component/Gallery2/Gallery2';
+import Expertice1 from './Component/Expertices/Expertice1';
 
 function App() {
   gsap.registerPlugin(ScrollTrigger);
@@ -20,69 +29,36 @@ function App() {
 
     const scroll = LocamotiveScrollHook();
 
-    // const scroll = new LocomotiveScroll({
-    //   el: document.querySelector(".App"),
-    //   smooth: true,
-    //   // multiplier: 0.4,
-    //   class: 'is-reveal'
-    // });
 
-
-    // ------proxy----------------
-
-
-
-    // scroll.on("scroll", ScrollTrigger.update);
-    // ScrollTrigger.scrollerProxy(cls1, {
-    //   scrollTop(value) {
-    //     return arguments.length ? scroll.scrollTo(value, { duration: 0, disableLerp: true }) : scroll.scroll.instance.scroll.y;
-    //   },
-    //   getBoundingClientRect() {
-    //     return { top: 0, left: 0, width: window.innerWidth, height: window.innerHeight };
-    //   },
-    //   pinType: document.querySelector(cls1).style.transform ? "transform" : "fixed"
-    // });
-
-
-    // ScrollTrigger.addEventListener("refresh", () => scroll.update());
-    // ScrollTrigger.defaults({ scroller: cls1 });
-
-    // -----------------------gsap-------------------------------
-
-    //  const value= ProxyHook({cls1})
-    //  console.log(value)
-    // gsap.to(cls1, 1, {
-    //   backgroundColor: '#CF4DCE'
-    //   , scrollTrigger: {
-    //     trigger: cls1,
-    //     markers: true,
-    //     start: 'top 80%',
-    //     end: 'bottom 40%',
-    //     scrub: true
-    //   }
-    // })
 
   }, [])
 
 
   return (
-    <div className="App"
-
-    >
+    <div className="App">
       <div data-scroll-container>
-        <Nav1></Nav1>
+        {/* <Nav1></Nav1> */}
         <Banner1></Banner1>
-        <About></About>
-        {/* <Marquee></Marquee> */}
+        <Temp1></Temp1>
+        <About2></About2>
+        <Marquee></Marquee>
+        <Temp1></Temp1>
+        {/* <Temp1></Temp1> */}
+        {/* <VarticalScroll></VarticalScroll> */}
+        <Banner2></Banner2>
+
+        {/* <Temp1></Temp1> */}
+        {/* <About></About> */}
+        {/* <Temp1></Temp1> */}
+        {/* <Temp1></Temp1> */}
+        {/* <Gallery1></Gallery1> */}
+        {/* <Gallery2></Gallery2> */}
+        <Expertice1></Expertice1>
+        <Temp1></Temp1>
 
 
-        {/* <div className="text-center text-6xl w-screen h-screen flex justify-center items-end">
-          <div className="line1">
-            <h1>Lorem ipsum dolor sit amet.</h1>
-          </div>
 
-        </div>
-        <div className="div h-screen bg-red-500"></div> */}
+
 
       </div>
 

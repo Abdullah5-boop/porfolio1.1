@@ -1,0 +1,26 @@
+:root {
+    --banner-h1: 120px;
+    --banner-p1: clamp(20px,3vw,42px);
+    --banner-p2: 25px
+}
+
+
+.about2-container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #1c1c1c;
+    color: white
+}
+
+.banner2-h1 {
+    font-size: var(--banner-h1);
+}
+
+.banner2-p1 {
+    font-size: var(--banner-p1);
+    font-family: nuefont2;
+}
+
+.banner2-p2 {
+    font-size: var(--banner-p2);
+}
