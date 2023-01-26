@@ -63,7 +63,7 @@ const Banner2 = () => {
     return (
         <div
             data-scroll-section
-            className='box-cover lg:px-10 px-3 w-[100vw] h-[150vh] lg:h-[90vh] mt-64 lg:mt-0'>
+            className='box-cover lg:px-10 px-3 w-[100vw] h-[150vh] lg:h-[90vh] mt-64 '>
 
             <div className="box  grid grid-cols-1 lg:grid-cols-6 lg:gap-5">
                 <div id="box1" className="  box1 row-span-2 lg:row-span-3 lg:col-span-2  flex items-center ">

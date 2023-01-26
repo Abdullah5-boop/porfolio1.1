@@ -69,10 +69,11 @@ const StategyMain = () => {
                 y: 0,
                 opacity: 1,
                 stagger: 0.08,
+                delay:0.5,
                 scrollTrigger: {
                     trigger: el,
                     // markers: true,
-                    start: "top 50%",
+                    start: "top 40%",
                     scrub: true
                     // end: "bottom 50%"
                 }
@@ -85,31 +86,25 @@ const StategyMain = () => {
 
 
     }, [])
-    // ---------------------------endAnimation-------------------------------------------------
+
 
 
     return (
-        <div>
-            <main className=' stategy grid grid-cols-1 lg:grid-cols-3'>
-                <div className="stategy-table col-span-1 lg:col-span-2 ">
-                    <div className='stategy-inner-table py-20 '>
-
-                        <h1 className='stategy-title mb-6'>process to user friendly website</h1>
-                        <div ref={stategyRef}>
-                            {
-                                stategydata.map((data, index) => <StrategyTable index={index} data={data} key={index}></StrategyTable>)
-                            }
-                        </div>
-
-                    </div>
+        <div className='flex justify-center items-center bg-[#1c1c1c] text-white pt-36'>
+            <main className='stategy grid grid-cols-1 lg:grid-cols-8 gap-2'>
+                <div className=' lg:col-span-2 lg:col-start-3'>
+                    <h1 className='lg:text-5xl text-3xl pb-12 stategy-h1'
+                    // data-scroll
+                    // data-scroll-speed="-4"
+                    >Process 
+                   <span> & </span>
+                     service</h1>
                 </div>
-                <div className="stategy-photo flex justify-center items-center">
-                    <div className="sategy-img-container">
-
-                        <img
-                            data-scroll data-scroll-speed="-5"
-                            src="https://source.unsplash.com/MChSQHxGZrQ" alt="" />
-                    </div>
+                <div className=' lg:col-span-3 px-5'>
+                    {
+                        stategydata.map((e,index)=><StrategyTable key={e.index} index={index+1} data={e}></StrategyTable>)
+                    }
+                    
                 </div>
             </main>
         </div>

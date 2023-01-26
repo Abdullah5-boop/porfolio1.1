@@ -1,17 +1,20 @@
-:root{
-    ---stategy-inner-table--width:90% ;
-    ---stategy--h1:clamp(30px,5vw,45px);
+:root {
+    ---stategy-inner-table--width: 90%;
+    ---stategy--h1: clamp(30px, 5vw, 45px);
 }
+
 @font-face {
-    font-family:nuefont ;
+    font-family: nuefont;
     src: url('../../nuefont/NeueMontreal-Light.otf');
 }
-*{
+
+* {
     /* outline: 1px solid greenyellow; */
 }
+
 .stategy {
     width: 100vw;
-    height: 120vh;
+    height: 100vh;
     box-sizing: border-box;
     /* color: aliceblue; */
     /* background-color: aquamarine; */
@@ -19,14 +22,16 @@
     grid-template-columns: repeat(3,1fr); */
 
 }
-.stategy-table{
+
+.stategy-table {
     width: 100%;
     background-color: black;
     color: white;
 }
-.line{
+
+.line {
     width: 100%;
-    height: 2px;
+    height: 1px;
     background-color: white;
 
 }
@@ -39,29 +44,37 @@
     /* background-color: aliceblue; */
 
 }
-.stategy-table-h1{
+
+.stategy-table-h1 {
     /* width:; */
-    font-weight: 600;
+    /* font-weight: 600; */
     font-size: var(---stategy--h1);
-    font-family: nuefont;
+    font-family: h1font;
     text-transform: uppercase;
-   
+
 }
-.stategy-table-p{
-    font-size: 20px;
+
+.stategy-table-p {
+    font-size: 15px;
     /* font-weight: 500; */
-    font-family: h1font
+    font-family: nuefont2;
 }
-.sategy-img-container{
+
+.sategy-img-container {
     width: 100%;
     height: 100%;
     overflow: hidden;
     /* background-color: rgb(243, 0, 0); */
 }
-.sategy-img-container img{
-width: 100%;
-height: 150%;
-object-fit: cover;
-/* text-decoration:; */
-font-weight: bold
+
+.sategy-img-container img {
+    width: 100%;
+    height: 150%;
+    object-fit: cover;
+    /* text-decoration:; */
+    font-weight: bold
+}
+
+.stategy-h1 {
+    font-family: h1font;
 }

@@ -55,7 +55,7 @@ const Marquee = () => {
     return (
         <>
             <div className=' marque-container relative' data-scroll-section ref={marqueeRef}>
-                <h1 className='text-3xl text-white'>This is backgroundColor</h1>
+                <h1 className='text-3xl '>This is backgroundColor</h1>
                 <div className="marquee-page1 " ref={tranferRef1}>
                     <StategyMain></StategyMain>
                 </div>

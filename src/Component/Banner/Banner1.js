@@ -33,7 +33,9 @@ const Banner1 = () => {
             className='banner1-container '>
             <div className='banner1-inner-container flex justify-center items-center '>
                 <div>
-                    <div className='temp'>
+                    <div className='temp'
+                    data-scroll-section
+                    >
                         <h1 className='banner-1st-line flex'
                             ref={fstln}
                         >
