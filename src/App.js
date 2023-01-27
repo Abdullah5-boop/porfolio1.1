@@ -47,14 +47,15 @@ function App() {
         {/* <VarticalScroll></VarticalScroll> */}
         <Banner2></Banner2>
 
-        {/* <Temp1></Temp1> */}
+        <Temp1></Temp1>
         {/* <About></About> */}
         {/* <Temp1></Temp1> */}
         {/* <Temp1></Temp1> */}
         {/* <Gallery1></Gallery1> */}
-        {/* <Gallery2></Gallery2> */}
         <Expertice1></Expertice1>
+        <Gallery2></Gallery2>
         <Temp1></Temp1>
+        {/* <Temp1></Temp1> */}
 
 
 
