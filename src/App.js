@@ -47,13 +47,16 @@ function App() {
         <Banner2></Banner2>
         <Temp1></Temp1>
         <Expertice1></Expertice1>
-
         <Gallery2></Gallery2>
-        {/* <Temp1></Temp1> */}
         <Footer1></Footer1>
+
+
+
+        {/* <Temp1></Temp1> */}
+        {/* <Gallery2></Gallery2> */}
         {/* <Temp1></Temp1> */}
 
-  
+
       </div>
 
 

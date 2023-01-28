@@ -5,10 +5,10 @@ const Temp1 = () => {
         // backgroundColor: "red",
         width: '100vw',
         height: '50vh',
-        // backgroundColor:'red'
+        // backgroundColor:'#1c1c1c'
     }
     return (
-        <div style={style} className='' data-scroll-section>
+        <div style={style} className='temp1' data-scroll-section>
 
         </div>
     );

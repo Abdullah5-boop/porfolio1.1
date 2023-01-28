@@ -44,6 +44,16 @@ const Banner2 = () => {
 
                 }
             })
+            // tl.to('.temp1', 1, {
+            //     backgroundColor: 'white',
+            //     delay: 0.5,
+            //     scrollTrigger: {
+            //         trigger: '.temp1',
+            //         start: 'top 100%',
+            //         scrub: true,
+            //     }
+
+            // })
 
 
         })
