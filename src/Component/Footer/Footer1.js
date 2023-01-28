@@ -2,8 +2,13 @@ import React from 'react';
 import './Footer1.css'
 const Footer1 = () => {
     return (
-        <div className='footer1-container py-12' data-scroll-section>
-            <h1>Contact Info</h1>
+        <div className='footer1-container py-36' data-scroll-section>
+            <div>
+                <div>
+                    <h1 className=' footer-h1 text-6xl my-5 lg:ml-5 text-center lg:text-start'>Contact Info</h1>
+                </div>
+                
+            </div>
             <div className="footer1-inner-container grid grid-cols-1 lg:grid-cols-5 ">
                 <div className="box11 flex justify-center items-center text-xl lg:text-4xl ">
                     <a href="https://www.facebook.com/">  Facebook</a>

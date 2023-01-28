@@ -8,24 +8,21 @@ import LocamotiveScrollHook from '../../Hook/LocamotiveScrollHook';
 const StategyMain = () => {
     const stategydata = [
         {
-            title: 'Define your website goals ',
-            content: " Our video will introduce you to the basics and get you up and running quickly. "
+            title: 'Discovery ',
+            content: "I focus thoroughly researched and evaluated leading to meaningful partnership and communication. "
         },
         {
-            title: 'Create on-site funnel',
-            content: " An on-site funnel is a series of steps you present to website visitors to guide them closer to working with your business. "
+            title: 'Strategy',
+            content: "Create e strong strategy and discuss it with clients."
         },
         {
-            title: 'Define target audience',
-            content: " Many businesses miss this step in their website development process. Or, they make their target audience category too broad."
+            title: 'Design & Identity',
+            content: "Design uniquely and give priority user experience."
         },
+     
         {
-            title: 'Research keywords',
-            content: "Before you start planning or writing any content, use keyword research tools to figure out what relevant keywords you want your business to rank for"
-        },
-        {
-            title: 'Create pages and posts',
-            content: " Many businesses miss this step in their website development process. Or, they make their target audience category too broad."
+            title: 'Implementation',
+            content: "Define reliable technology base on the designs"
         },
 
     ]
@@ -46,7 +43,6 @@ const StategyMain = () => {
             getBoundingClientRect() {
                 return { top: 0, left: 0, width: window.innerWidth, height: window.innerHeight };
             },
-            // pinType: document.querySelector(el).style.transform ? "transform" : "fixed"
         });
         ScrollTrigger.addEventListener("refresh", () => scroll.update());
         ScrollTrigger.defaults({ scroller: el });

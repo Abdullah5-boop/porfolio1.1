@@ -52,9 +52,9 @@ function App() {
 
 
 
-        {/* <Temp1></Temp1> */}
-        {/* <Gallery2></Gallery2> */}
-        {/* <Temp1></Temp1> */}
+        {/* <Temp1></Temp1>
+      <Expertice1></Expertice1>
+        <Temp1></Temp1> */}
 
 
       </div>

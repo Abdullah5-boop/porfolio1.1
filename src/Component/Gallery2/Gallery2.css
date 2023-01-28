@@ -4,6 +4,9 @@
     height: 150vh;
     box-sizing: border-box;
 }
+*{
+    /* outline: 1px solid green; */
+}
 
 .gallery2-inner-comtaier {
     width: 100%;
