@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer1 from '../Footer/Footer1';
 import './Gallery2.css';
 const Gallery2 = () => {
     return (
@@ -15,9 +16,9 @@ const Gallery2 = () => {
                                     src="https://source.unsplash.com/93lIGb_T1jU" alt="" />
                             </div>
                             <div className='flex justify-between'>
-                            <h1 className='text-2xl gallery2-h1'>Travel Agency</h1>
-                            <h1>React project</h1>
-                        </div>
+                                <h1 className='text-2xl gallery2-h1'>Travel Agency</h1>
+                                <h1>React project</h1>
+                            </div>
 
                         </div>
 
@@ -47,14 +48,9 @@ const Gallery2 = () => {
                             <h1>React project</h1>
                         </div>
                     </div>
-
-
-
-
-
-
                 </div>
             </div>
+            {/* <Footer1></Footer1> */}
         </>
     );
 };

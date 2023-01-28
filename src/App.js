@@ -22,6 +22,7 @@ import About2 from './Component/About/About2';
 import Gallery2 from './Component/Gallery2/Gallery2';
 import Expertice1 from './Component/Expertices/Expertice1';
 import Temp2 from './Component/Temp1/Temp2';
+import Footer1 from './Component/Footer/Footer1';
 
 function App() {
   gsap.registerPlugin(ScrollTrigger);
@@ -46,12 +47,13 @@ function App() {
         <Banner2></Banner2>
         <Temp1></Temp1>
         <Expertice1></Expertice1>
-        <Gallery2></Gallery2>
-        <Temp1></Temp1>
 
-        {/* <Temp1></Temp1>
-        <Expertice1></Expertice1>
-        <Temp1></Temp1> */}
+        <Gallery2></Gallery2>
+        {/* <Temp1></Temp1> */}
+        <Footer1></Footer1>
+        {/* <Temp1></Temp1> */}
+
+  
       </div>
 
 

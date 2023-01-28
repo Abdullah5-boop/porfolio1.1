@@ -31,7 +31,7 @@ const Expertice1 = () => {
         const ctx = gsap.context(() => {
             tl.from('.experiment1-tiltle', 1.5, {
                 ease: Power3.easeInOut,
-                y: 0,
+                y: 44,
                 opacity: 0,
 
                 scrollTrigger: {
