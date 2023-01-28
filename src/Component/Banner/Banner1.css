@@ -36,7 +36,7 @@
     font-size: var(--h1-fontsize);
     font-family:h1font ;
     line-height: var(--lineheight);
-    height:calc( var(--height)+30px);
+    /* height:calc( var(--height)+30px); */
     overflow: hidden;
     
 
@@ -46,7 +46,7 @@
     font-size: var(--h1-fontsize);
     font-family:h1font ;
     line-height: var(--lineheight);
-    height: calc(var(--height)-100px);
+    /* height: calc(var(--height)-100px); */
     overflow: hidden;
     /* background-color: rgb(238, 165, 71); */
 }

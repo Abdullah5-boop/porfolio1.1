@@ -6,7 +6,7 @@ function LocamotiveScrollHook(){
   const scroll = new LocomotiveScroll({
     el: document.querySelector(".App"),
     smooth: true,
-    // multiplier: 0.4,
+     multiplier: 0.6,
     class: 'is-reveal'
   });
   return scroll
