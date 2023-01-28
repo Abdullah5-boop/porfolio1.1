@@ -90,8 +90,8 @@ const StategyMain = () => {
 
 
     return (
-        <div className='flex justify-center items-center bg-[#1c1c1c] text-white pt-36'>
-            <main className='stategy grid grid-cols-1 lg:grid-cols-8 gap-2'>
+        <div className='flex justify-center items-center bg-[#1c1c1c] text-white pt-36 mb-100'>
+            <main className='stategy grid grid-cols-1 lg:grid-cols-8 gap-2 h-[200vh] lg:h-[100vh]'>
                 <div className=' lg:col-span-2 lg:col-start-3'>
                     <h1 className='lg:text-5xl text-3xl pb-12 stategy-h1'
                     // data-scroll

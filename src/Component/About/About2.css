@@ -24,3 +24,19 @@
 .banner2-p2 {
     font-size: var(--banner-p2);
 }
+.text1 > p {
+    background: linear-gradient(
+      to right,
+      rgb(255, 255, 255) 50%,
+      rgb(37, 37, 37) 50%
+    );
+    background-size: 200% 100%;
+    background-position-x: 100%;
+    /* background-position-y: 50%; */
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    /* margin-bottom: -250px; */
+    /* margin-left: 50px; */
+  }
+  

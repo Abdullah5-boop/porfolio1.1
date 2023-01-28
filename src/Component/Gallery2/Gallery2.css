@@ -1,5 +1,54 @@
 .gallery2-container {
+    background-color: #1c1c1c;
     width: 100vw;
-    height: 100vh;
-    background-color: beige;
+    height: 150vh;
+    box-sizing: border-box;
+}
+
+.gallery2-inner-comtaier {
+    width: 100%;
+    height: 100%;
+    background-color: #1c1c1c;
+    color: azure;
+
+
+}
+
+.gallery2-img-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.gallery2-img-container img {
+    width: 180%;
+    height: 150%;
+    object-fit: cover;
+}
+
+.gallery2-img-container2{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.gallery2-img-container2 img {
+    width: 150%;
+    height: 180%;
+    object-fit: cover;
+}
+
+
+
+
+.gallery-img-container3{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+}
+.gallery-img-container3 img {
+    width: 180%;
+    height: 150%;
+    object-fit: cover;
 }

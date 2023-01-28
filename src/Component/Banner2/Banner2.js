@@ -8,20 +8,9 @@ import './Banner2.css';
 import LocamotiveScrollHook from '../../Hook/LocamotiveScrollHook';
 const Banner2 = () => {
     gsap.registerPlugin(CSSRulePlugin, ScrollTrigger);
-
-
-    // var rule = CSSRulePlugin.getRule(".box1::after");
     const tl = gsap.timeline();
-    // const cls1 = ".box1"
     const cls1 = ".img-cover"
-
-    // var boxAfter = window.getComputedStyle(box, "::after");
-
-
-
-
     useEffect(() => {
-
 
         const scroll = LocamotiveScrollHook();
         scroll.on("scroll", ScrollTrigger.update);
