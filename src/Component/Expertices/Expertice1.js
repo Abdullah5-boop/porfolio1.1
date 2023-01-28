@@ -31,7 +31,7 @@ const Expertice1 = () => {
         const ctx = gsap.context(() => {
             tl.from('.experiment1-tiltle', 1.5, {
                 ease: Power3.easeInOut,
-                y: 0,
+                y: 44,
                 opacity: 0,
 
                 scrollTrigger: {
@@ -56,7 +56,7 @@ const Expertice1 = () => {
             })
             tl.from([...el], 1, {
                 ease: Power3.easeInOut,
-                y: 144,
+                y: 44,
                 opacity: 0,
                 stagger: staggervalue,
                 scrollTrigger: {
@@ -73,7 +73,7 @@ const Expertice1 = () => {
                 y: 0,
                 opacity: 1,
                 stagger: staggervalue,
-                delay:0.5,
+                delay: 0.5,
                 scrollTrigger: {
                     trigger: '.experiment1-tiltle',
                     start: 'top 80%',
@@ -91,17 +91,15 @@ const Expertice1 = () => {
 
     return (
         <div data-scroll-section ref={Expertice1ref} >
-            <div className=' h-[120vh] lg:h-[90vh] pt-5 lg:pt-36 bg-[#1c1c1c] text-white px-6 mt-12 lg:mt-0'>
+            <div className=' h-[120vh] lg:h-[90vh] pt-5 lg:pt-36 bg-[#1c1c1c] text-white lg:px-6 mt-12 lg:mt-0'>
                 <div className="experiment1-container w-[100vw] h-[100vh] lg:h-[40vh]">
                     <div className="experiment1-tiltle ">
-                        <h1>Lorem ipsum </h1>
+                        <h1>Education</h1>
                     </div>
                     <div className="experiment1-hr"></div>
                     <div className="experiment1-content grid grid-cols-1 lg:grid-cols-8 lg:gap-2 ">
                         <div className="experiment2-content-1st  lg:col-span-4 lg:row-span-2 lg:mt-8">
-                            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero perferendis quos suscipit.<div className='inline-block  underlines italic'>
-                                marketing strategies
-                            </div>  Possimus unde maxime, inventore qui voluptates ducimus quisquam  </h1>
+                            <h1>I am a student at Independent University, Bangladesh. I am studying in the Department of Computer Science and Engineering.   I love solving complex problems. However, I am not a problem solver 😪    </h1>
 
                         </div>
                         <div className="experiment2-content-2nd  lg:col-span-3 lg:col-start-7 flex flex-col justify-center">
@@ -118,7 +116,7 @@ const Expertice1 = () => {
                                 <ul className='text-xl'>
 
                                     <li>Javascript</li>
-                                    <li>react</li>
+                                    <li>React</li>
                                     <li>Redux</li>
                                     <li>Gsap</li>
                                     <li>SQL</li>

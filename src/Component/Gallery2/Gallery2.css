@@ -4,6 +4,9 @@
     height: 150vh;
     box-sizing: border-box;
 }
+*{
+    /* outline: 1px solid green; */
+}
 
 .gallery2-inner-comtaier {
     width: 100%;
@@ -51,4 +54,17 @@
     width: 180%;
     height: 150%;
     object-fit: cover;
+}
+.detail1{
+    visibility:hidden;
+    transition-delay: 2s;
+    transition: 1s all ease-in-out;
+    color:#1c1c1c
+}
+.gallery-inner-container:hover .detail1 {
+   
+
+    color: white;
+    visibility:visible;
+    /* transition: 1s all ease-in-out; */
 }

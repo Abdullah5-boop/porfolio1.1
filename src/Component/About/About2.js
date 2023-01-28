@@ -51,7 +51,8 @@ const About2 = () => {
                     </div>
                     <div className=' text1 lg:col-span-4 lg:row-span-2  banner2-p1 '>
                         <p className=' inline'>
-                            "Our drive is to make your brand stand out with meaning and1 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id soluta doloremque, nesciunt dolore repellat impedit minima iste accusamus, dolorum adipisci aliquid consectetur suscipit est minus? Exercitationem quam cum quidem optio!
+                            My name is Abdullah Al Mahmood. I am a web developer. I have built many types of font-ends and back-ends designs. My current location is Dhaka, Bangladesh. I like to build craft solid and scalable front-end and 
+back-ends products with great user experiences.
 
                         </p>
                         {/* <p>
@@ -61,7 +62,7 @@ const About2 = () => {
                     </div>
                     <div className='  lg:col-span-3 lg:col-start-2 lg:flex items-end '>
                         <p className='banner2-p2 lg:mt-14'>YOUR BRAND’S JOURNEY STARTS HERE AND TOGETHER
-                            WE WILL TRAVEL<div className='inline-block  underlines'> FURTHER THAN YOU HAVE EVER
+                            WE WILL TRAVEL<div className='inline-block  underlines italic mx-2'> FURTHER THAN YOU HAVE EVER
                             </div>
                             IMAGINED!</p>
                     </div>

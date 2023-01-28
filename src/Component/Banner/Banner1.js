@@ -66,13 +66,13 @@ const Banner1 = () => {
                             <div>t</div>
                         </h1>
                         <p className='pl-12 p-2nd-line invisible lg:visible'>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        This system might connect you with me</p>
                     </div>
 
                     <div className='flex items-center '>
                         <p className='p-3nd-line  invisible lg:visible
                              '>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit..
+                            My name is Abdullah. Welcome to my website..
                         </p>
                         <h1 className=' h1-3nd-line flex'
                             ref={thirdrf}

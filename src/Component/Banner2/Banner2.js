@@ -38,12 +38,22 @@ const Banner2 = () => {
                 height: '0%',
                 scrollTrigger: {
                     trigger: cls1,
-                    start: 'top 30%',
+                    start: 'top 80%',
                     // end: 'bottom 50%',
                     // scrub: true
 
                 }
             })
+            // tl.to('.temp1', 1, {
+            //     backgroundColor: 'white',
+            //     delay: 0.5,
+            //     scrollTrigger: {
+            //         trigger: '.temp1',
+            //         start: 'top 100%',
+            //         scrub: true,
+            //     }
+
+            // })
 
 
         })
@@ -58,26 +68,33 @@ const Banner2 = () => {
                 <div id="box1" className="  box1 row-span-2 lg:row-span-3 lg:col-span-2  flex items-center ">
 
                     <div className="box1-img-container py-5  ">
-                        {/* <img src="https://source.unsplash.com/-lFhGNUVnJ4" alt="" /> */}
-                        <img src="https://source.unsplash.com/xpzlSBYKGMQ" alt="" />
+                        {/* <img src="https://i.ibb.co/SJgnvyk/IMG-20230128-WA0003.jpg" alt="" /> */}
+                        <img src="https://i.ibb.co/Rjg9V09/IMG-20230128-230455.jpg" alt="" />
                         <div className="img-cover"></div>
                     </div>
 
                 </div>
                 <div className="box2  row-start-1  lg:col-span-4 lg:row-span-2  pt-7">
-                    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quos in eos ex qui eius molestiae fugit optio ipsa minus iusto, </h1>
+                    <h1 className='text-xl'>my favorite Line</h1>
+                    <h1>
+                        Optimism is an occupational hazard of programming: feedback is the treatment. ~
+                         “ Kent Beck ”
+
+                    </h1>
                 </div>
                 <div className="box3  lg:col-span-3 flex items-end ">
-                    <p className='lg:w-4/6 pb-8'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quam earum aut ea reprehenderit dolorum illo veniam, cum ipsum fuga aliquid, voluptas reiciendis, debitis ut repudiandae? Magni maxime esse voluptatum!</p>
+                    <p className='lg:w-4/6 pb-8'>
+                        Great user experience websites come for this step.
+                    </p>
                 </div>
-                <div className="box4 flex items-end justify-end lg:pb-8  "> 4
+                <div className="box4 flex items-end justify-end lg:pb-8  ">
                     <ul>
                         <li>Research</li>
 
                         <li>Stategy</li>
 
-                        <li> structure</li>
-                        <li>development</li>
+                        <li> Structure</li>
+                        <li>Development</li>
                     </ul>
 
                 </div>
